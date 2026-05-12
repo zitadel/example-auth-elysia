@@ -127,7 +127,7 @@ Complete logout implementation that properly terminates both the local session a
 
 ## TODOs
 
-### 1. Security headers
+### 1. Security headers (Elysia middleware)
 
 **Not yet enabled.** Consider adding security headers to your Elysia application:
 
