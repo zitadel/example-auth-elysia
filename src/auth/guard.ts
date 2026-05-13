@@ -30,16 +30,17 @@ import { authConfig } from './index.js';
  */
 export async function requireAuth({
   request,
-  set,
 }: {
   request: Request;
-  set: { redirect?: string };
 }): Promise<Response | void> {
   try {
     const authUser = await getAuthUser(request, authConfig);
     if (!authUser?.session.user) {
       const callbackUrl: string = encodeURIComponent(request.url);
-      set.redirect = `/auth/signin?callbackUrl=${callbackUrl}`;
+      return new Response(null, {
+        status: 302,
+        headers: { Location: `/auth/login?callbackUrl=${callbackUrl}` },
+      });
     }
   } catch (err) {
     throw err as Error;
