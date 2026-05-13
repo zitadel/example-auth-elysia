@@ -342,7 +342,7 @@ export async function build() {
      */
     .onError(({ view, code }) => {
       if (code === 'NOT_FOUND') {
-        return view('not-found', {});
+        return view('not-found', {}, { status: 404 });
       }
     });
 
