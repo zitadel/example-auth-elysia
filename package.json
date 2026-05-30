@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@auth/core": "^0.40.0",
-    "@zitadel/elysia-auth": "file:../elysia-auth",
+    "@zitadel/elysia-auth": "^1.0.1",
     "@elysiajs/node": "^1.2.0",
     "@elysiajs/static": "^1.2.0",
     "dotenv": "^16.5.0",
