@@ -20,7 +20,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@auth/core": "^0.40.0",
+    "@auth/core": "^0.41.3",
     "@zitadel/elysia-auth": "^1.0.1",
     "@elysiajs/node": "^1.2.0",
     "@elysiajs/static": "^1.2.0",
