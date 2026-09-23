@@ -25,7 +25,7 @@
     "@elysiajs/node": "^1.2.0",
     "@elysiajs/static": "^1.2.0",
     "dotenv": "^16.5.0",
-    "elysia": "^1.2.0",
+    "elysia": "^1.4.30",
     "handlebars": "^4.7.9",
     "openid-client": "^6.6.2",
     "qs": "^6.16.0"
